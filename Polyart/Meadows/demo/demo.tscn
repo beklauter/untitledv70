@@ -22,7 +22,8 @@
 [ext_resource type="PackedScene" path="res://Polyart/Meadows/scenes/Trees/Prefab_TreeLarge_04.tscn" id="21_a5q00"]
 [ext_resource type="PackedScene" path="res://Polyart/Meadows/scenes/Trees/Prefab_Birch_03_Red.tscn" id="22_wvv2a"]
 [ext_resource type="PackedScene" path="res://Polyart/Meadows/scenes/Foliage/Prefab_Mushroom_02.tscn" id="23_kd4uw"]
-[ext_resource type="PackedScene" uid="uid://c2ujcjg0u4oph" path="res://Polyart/Meadows/demo/player_fp.tscn" id="24_xqk38"]
+[ext_resource type="PackedScene" uid="uid://dq3tp0playr01" path="res://Player/player_tp.tscn" id="24_xqk38"]
+[ext_resource type="PackedScene" uid="uid://cw4t3rv01um30" path="res://Water/water_volume.tscn" id="water_volume"]
 [ext_resource type="PackedScene" path="res://Polyart/Meadows/scenes/Rocks/Prefab_RocksRound_01.tscn" id="26_0y3rd"]
 [ext_resource type="PackedScene" path="res://Polyart/Meadows/scenes/Props/Prefab_Barrel_01.tscn" id="27_05a3a"]
 [ext_resource type="PackedScene" path="res://Polyart/Meadows/scenes/Terrain/Prefab_Terrain_02.tscn" id="28_3nvbk"]
@@ -5743,9 +5744,14 @@ transform = Transform3D(-1.06278, 0, -0.606454, 0, 1.07129, 0, 0.606454, 0, -1.0
 [node name="Prefab_Mushroom_02_1700" parent="Trees" unique_id=1849063852 instance=ExtResource("23_kd4uw")]
 transform = Transform3D(-0.829844, 0, 0.580439, 0, 1.23633, 0, -0.580439, 0, -0.829844, 377.344, 114.904, -562.598)
 
-[node name="PlayerFP" parent="." unique_id=1016971551 instance=ExtResource("24_xqk38")]
+[node name="PlayerTP" parent="." unique_id=1016971551 instance=ExtResource("24_xqk38")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 361, 110.858, -511)
 
+[node name="WaterVolume_Lake" parent="." unique_id=411002731 instance=ExtResource("water_volume")]
+transform = Transform3D(579.232, 0, 113.79, 0, 200, 0, -108.641, 0, 606.684, 287.228, 12.658, -782.443)
+
+[node name="WaterVolume_Pond" parent="." unique_id=411002732 instance=ExtResource("water_volume")]
+transform = Transform3D(-20.6031, 0, -6.36878, 0, 20, 0, 7.88113, 0, -16.6495, 561.26, 111.954, -596.169)
 [node name="Statics" type="Node3D" parent="." unique_id=915586588]
 
 [node name="Prefab_RocksRound_01_0000" parent="Statics" unique_id=430272714 instance=ExtResource("26_0y3rd")]

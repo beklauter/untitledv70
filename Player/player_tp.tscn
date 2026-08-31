@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dq3tp0playr01"]
+
+[ext_resource type="Script" uid="uid://bt3pl0y3rct01" path="res://Player/tp_player.gd" id="1_player"]
+[ext_resource type="Script" uid="uid://bn1m4t0rual01" path="res://Player/tp_animator.gd" id="2_animator"]
+[ext_resource type="Script" uid="uid://bc4m3r4tp0101" path="res://Player/tp_camera.gd" id="3_camera"]
+[ext_resource type="PackedScene" uid="uid://bjablb0quk8wt" path="res://Assets/UAL1.glb" id="4_model"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_body"]
+radius = 0.32
+height = 1.8
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_camera"]
+radius = 0.22
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sensor"]
+radius = 0.35
+height = 1.8
+
+[node name="PlayerTP" type="CharacterBody3D"]
+script = ExtResource("1_player")
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("CapsuleShape3D_body")
+
+[node name="WaterSensor" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 8
+monitorable = false
+
+[node name="SensorShape" type="CollisionShape3D" parent="WaterSensor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
+shape = SubResource("CapsuleShape3D_sensor")
+
+[node name="Model" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 0, 0)
+script = ExtResource("2_animator")
+
+[node name="UAL1" parent="Model" instance=ExtResource("4_model")]
+
+[node name="CameraRig" type="Node3D" parent="."]
+script = ExtResource("3_camera")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraRig"]
+shape = SubResource("SphereShape3D_camera")
+spring_length = 4.2
+margin = 0.35
+
+[node name="Camera3D" type="Camera3D" parent="CameraRig/SpringArm3D"]
+fov = 70.0
+current = true
