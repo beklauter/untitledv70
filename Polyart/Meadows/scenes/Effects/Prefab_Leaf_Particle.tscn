@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Effects/M_Leaf_01.tres" id="mat"]
+
+[sub_resource type="ParticleProcessMaterial" id="Process_leaf"]
+particle_flag_rotate_y = false
+emission_shape = 3
+emission_box_extents = Vector3(4.55, 0.35, 4.55)
+direction = Vector3(0.586, -0.12, 0.81)
+spread = 25.0
+initial_velocity_min = 1.8
+initial_velocity_max = 3.5
+gravity = Vector3(0, -0.3, 0)
+angle_min = -180.0
+angle_max = 180.0
+angular_velocity_min = -650.0
+angular_velocity_max = 650.0
+scale_min = 0.2
+scale_max = 0.3
+turbulence_enabled = false
+
+[sub_resource type="QuadMesh" id="Quad_leaf"]
+size = Vector2(1, 1)
+material = ExtResource("mat")
+
+[node name="Prefab_Leaf_Particle" type="GPUParticles3D"]
+cast_shadow = 0
+amount = 16
+lifetime = 8.0
+preprocess = 8.0
+local_coords = false
+visibility_aabb = AABB(-8, -14, -8, 34, 20, 40)
+process_material = SubResource("Process_leaf")
+draw_pass_1 = SubResource("Quad_leaf")

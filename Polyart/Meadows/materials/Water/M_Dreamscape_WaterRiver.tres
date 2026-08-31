@@ -1,0 +1,52 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=3 uid="uid://ci5d14mdin0a0"]
+
+[ext_resource type="Shader" uid="uid://7refss6wo76d" path="res://Polyart/SharedResources/Shaders/pa_river.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://d2bjca53tigb4" path="res://Polyart/Meadows/textures/Water/T_Water_Normals.png" id="e2"]
+[ext_resource type="Texture2D" uid="uid://8yjsjeo3gr2u" path="res://Polyart/Meadows/textures/Water/T_Waves_Noise.png" id="e3"]
+[ext_resource type="Texture2D" uid="uid://brw3tg4kokpkl" path="res://Polyart/Meadows/textures/Water/T_Water_Caustics_C.PNG" id="e4"]
+[ext_resource type="Texture2D" uid="uid://b2lg1e1jms2t5" path="res://Polyart/Meadows/textures/Water/T_Water_Height.png" id="e5"]
+
+[resource]
+resource_name = "M_Dreamscape_WaterRiver"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/shallow_color = Color(0.22, 0.55, 0.6, 1)
+shader_parameter/deep_color = Color(0, 0.4357, 0.5377, 1)
+shader_parameter/shallow_color_depth = 0.0
+shader_parameter/deep_color_depth = 1.0
+shader_parameter/smoothness_val = 0.85
+shader_parameter/metallic = 0.647
+shader_parameter/flow_speed = 0.5
+shader_parameter/flow_stretch = 2.5
+shader_parameter/turbulence_scale = 0.5
+shader_parameter/turbulence_strength = 0.08
+shader_parameter/displacement_tex = ExtResource("e5")
+shader_parameter/displace_strength = 0.2
+shader_parameter/displace_tiling = Vector2(2, 8)
+shader_parameter/displace_pan_speed = -1.0
+shader_parameter/water_normal_map = ExtResource("e2")
+shader_parameter/normal_tiling = 3.0
+shader_parameter/normals_strength = 0.2
+shader_parameter/normal2_tiling_mul = 1.5
+shader_parameter/normal2_speed_mul = 1.0
+shader_parameter/refraction_amount = 0.06
+shader_parameter/thickness_depth_min = 0.0
+shader_parameter/thickness_depth_max = 6.0
+shader_parameter/underwater_brightness = 1.0
+shader_parameter/shore_fade_depth = 0.25
+shader_parameter/edge_foam_distance = 0.4
+shader_parameter/edge_foam_speed = 2.0
+shader_parameter/edge_foam_waves = 6.0
+shader_parameter/edge_foam_opacity = 0.5
+shader_parameter/noise_tex = ExtResource("e3")
+shader_parameter/caustics_tex = ExtResource("e4")
+shader_parameter/caustics_intensity = 0.8
+shader_parameter/caustics_scale = 0.8
+shader_parameter/caustics_distance = 0.9
+shader_parameter/caustics_distortion = 0.0
+shader_parameter/ssr_enabled = true
+shader_parameter/ssr_stride = 2.0
+shader_parameter/ssr_max_travel = 200.0
+shader_parameter/ssr_thickness = 0.3
+shader_parameter/ssr_mix_strength = 0.7
+shader_parameter/ssr_blur = 1.5

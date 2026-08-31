@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://Polyart/Meadows/models/Props/SM_Docks.fbx" id="model"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Props/M_Docks.tres" id="r1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h518t"]
+size = Vector3(1.82884, 0.3, 2.00053)
+
+[node name="Prefab_Docks" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Docks" parent="Model" index="0"]
+surface_material_override/0 = ExtResource("r1")
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 0
+
+[node name="DeckSlab" type="CollisionShape3D" parent="Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0139369, 0.8, -0.177996)
+shape = SubResource("BoxShape3D_h518t")
+
+[editable path="Model"]

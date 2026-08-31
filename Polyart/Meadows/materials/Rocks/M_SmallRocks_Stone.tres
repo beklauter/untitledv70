@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3]
+
+[ext_resource type="Shader" path="res://Polyart/SharedResources/Shaders/pa_worldaligned.gdshader" id="e1"]
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/Terrain/T_StoneGround_C.tga" id="e2"]
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/Terrain/T_StoneGround_N.tga" id="e3"]
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/Terrain/T_StoneGround_R.tga" id="e4"]
+
+[resource]
+resource_name = "M_SmallRocks_Stone"
+shader = ExtResource("e1")
+shader_parameter/normal_intensity = 1.0
+shader_parameter/smoothness_intensity = 0.622
+shader_parameter/albedo_tex = ExtResource("e2")
+shader_parameter/normal_tex = ExtResource("e3")
+shader_parameter/roughness_tex = ExtResource("e4")

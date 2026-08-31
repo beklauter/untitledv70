@@ -1,0 +1,24 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3]
+
+[ext_resource type="Shader" path="res://Polyart/SharedResources/Shaders/pa_trunk.gdshader" id="e1"]
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/Trees/T_TreeLarge_Bark_C.png" id="e2"]
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/Trees/T_TreeLarge_Bark_ORM.png" id="e3"]
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/Trees/T_TreeLarge_Bark_N.png" id="e4"]
+
+[resource]
+resource_name = "M_TreeLarge_Bark"
+shader = ExtResource("e1")
+shader_parameter/color_map = ExtResource("e2")
+shader_parameter/orm_map = ExtResource("e3")
+shader_parameter/normal_map = ExtResource("e4")
+shader_parameter/color_tint = Color(1, 1, 1, 0)
+shader_parameter/uv_size = 1.0
+shader_parameter/ao_intensity = 0.0
+shader_parameter/roughness_intensity = 1.0
+shader_parameter/metallic_intensity = 0.0
+shader_parameter/normal_intensity = 1.0
+shader_parameter/coverage_size = 2.0
+shader_parameter/wind_speed = 2.0
+shader_parameter/wind_intensity = 0.0
+shader_parameter/enable_coverage = false
+shader_parameter/wind_direction = Vector2(1, 0)

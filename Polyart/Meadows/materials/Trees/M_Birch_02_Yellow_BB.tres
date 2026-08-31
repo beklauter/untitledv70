@@ -1,0 +1,18 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://Polyart/SharedResources/Shaders/pa_tree_billboard.gdshader" id="e1"]
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/Trees/T_Birch_02_BB.png" id="e2"]
+
+[resource]
+resource_name = "M_Birch_02_Yellow_BB"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/foliage_tex = ExtResource("e2")
+shader_parameter/use_normal_tex = false
+shader_parameter/color_top = Color(0.76, 0.53, 0.02, 1)
+shader_parameter/color_bottom = Color(0.55, 0.3, 0.015, 0)
+shader_parameter/bottom_level = -13.08
+shader_parameter/bottom_fade = -0.089
+shader_parameter/smoothness_val = 0.0
+shader_parameter/alpha_clip = 0.35
+shader_parameter/cull_backfaces = false

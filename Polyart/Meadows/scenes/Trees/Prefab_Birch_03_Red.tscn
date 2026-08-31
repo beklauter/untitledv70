@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="PackedScene" path="res://Polyart/Meadows/models/Trees/SM_Birch_03_Unity.fbx" id="model"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Trees/M_TreeBirch_Leaves_Red.tres" id="r1"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Trees/M_TreeBirch_Bark.tres" id="r2"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Trees/M_Birch_03_Red_BB.tres" id="r3"]
+[ext_resource type="Script" path="res://Polyart/Meadows/demo/scripts/pa_lod_group.gd" id="r4"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gbjmh"]
+radius = 0.315
+height = 5.4
+
+[node name="Prefab_Birch_03_Red" type="Node3D"]
+script = ExtResource("r4")
+lod_switch_distances = PackedFloat32Array(17.14, 27.71, 60.57)
+distance_scale = 3.0
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Birch_03_LOD0" parent="Model" index="0"]
+surface_material_override/0 = ExtResource("r1")
+surface_material_override/1 = ExtResource("r2")
+
+[node name="Birch_03_LOD1" parent="Model" index="1"]
+surface_material_override/0 = ExtResource("r1")
+surface_material_override/1 = ExtResource("r2")
+
+[node name="Birch_03_LOD2" parent="Model" index="2"]
+surface_material_override/0 = ExtResource("r1")
+surface_material_override/1 = ExtResource("r2")
+
+[node name="Birch_03_LOD3" parent="Model" index="3"]
+surface_material_override/0 = ExtResource("r2")
+surface_material_override/1 = ExtResource("r3")
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 0
+
+[node name="Capsule" type="CollisionShape3D" parent="Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.11, 2.47, 0.00978988)
+shape = SubResource("CapsuleShape3D_gbjmh")
+
+[editable path="Model"]

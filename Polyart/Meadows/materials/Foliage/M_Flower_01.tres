@@ -1,0 +1,36 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://ccsythnpxdgnf"]
+
+[ext_resource type="Shader" uid="uid://bautm2acrb4i6" path="res://Polyart/SharedResources/Shaders/pa_grass.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://bwurp8iineud2" path="res://Polyart/Meadows/textures/Foliage/T_Flower_Atlas_01.png" id="e2"]
+
+[resource]
+resource_name = "M_Flower_01"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/base_color_tex = ExtResource("e2")
+shader_parameter/tint_bottom = Color(0.949661, 0.995383, 0.92875, 1)
+shader_parameter/tint_top = Color(0.960076, 0.998294, 0.927609, 1)
+shader_parameter/grad_pow = 1.0
+shader_parameter/grad_offset = 0.0
+shader_parameter/grad_length = 1.0
+shader_parameter/smoothness_val = 0.129
+shader_parameter/alpha_clip = 0.5
+shader_parameter/cull_backfaces = false
+shader_parameter/fade_at_glancing = false
+shader_parameter/glancing_mul = 1.0
+shader_parameter/cloud_color = Color(0, 0, 0, 0)
+shader_parameter/cloud_scale = 80.0
+shader_parameter/cloud_speed = Vector2(1.5, 0.8)
+shader_parameter/cloud_use_texture = false
+shader_parameter/wind_large_speed = Vector2(0.1, 2)
+shader_parameter/wind_large_multiplier = 0.1
+shader_parameter/wind_large_scale = 60.0
+shader_parameter/wind_gust_power = 2.0
+shader_parameter/wind_dip = 0.4
+shader_parameter/wind_darken = 0.25
+shader_parameter/wind_ramp = 0.5
+shader_parameter/wind_small_speed = Vector2(-0.15, 1.8)
+shader_parameter/wind_small_multiplier = 0.1
+shader_parameter/wind_small_scale = 40.0
+shader_parameter/wind_offset = 0.0
+shader_parameter/wind_use_vertex_color = false

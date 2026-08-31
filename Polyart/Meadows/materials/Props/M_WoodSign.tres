@@ -1,0 +1,30 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3]
+
+[ext_resource type="Shader" path="res://Polyart/SharedResources/Shaders/pa_props.gdshader" id="e1"]
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/Props/T_WoodSign_01_C.png" id="e2"]
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/Props/T_WoodSign_01_ORM.png" id="e3"]
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/Props/T_WoodSign_01_N.png" id="e4"]
+
+[resource]
+resource_name = "M_WoodSign"
+shader = ExtResource("e1")
+shader_parameter/color_map = ExtResource("e2")
+shader_parameter/orm_map = ExtResource("e3")
+shader_parameter/normal_map = ExtResource("e4")
+shader_parameter/color_tint = Color(1, 1, 1, 0)
+shader_parameter/emissive_color = Color(1, 1, 1, 0)
+shader_parameter/uv_size = 1.0
+shader_parameter/normal_intensity = 1.0
+shader_parameter/roughness_intensity = 1.0
+shader_parameter/ao_intensity = 1.0
+shader_parameter/alpha_clip = 0.0
+shader_parameter/emissive_intensity = 0.0
+shader_parameter/coverage_size = 0.0
+shader_parameter/coverage_normal_intensity = 0.0
+shader_parameter/coverage_roughness_intensity = 0.0
+shader_parameter/coverage_metallic_intensity = 0.0
+shader_parameter/slope_offset = 0.0
+shader_parameter/slope_contrast = 1.0
+shader_parameter/noise_size = 100.0
+shader_parameter/enable_coverage = false
+shader_parameter/metallic_intensity = 0.7

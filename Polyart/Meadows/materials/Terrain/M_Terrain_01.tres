@@ -1,0 +1,29 @@
+[gd_resource type="ShaderMaterial" load_steps=7 format=3 uid="uid://ca4exiakf4sy3"]
+
+[ext_resource type="Shader" uid="uid://ox4ke626vnxt" path="res://Polyart/SharedResources/Shaders/pa_worldaligned_blend.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://bii0uurmh2qvn" path="res://Polyart/Meadows/textures/Terrain/T_Grass_Ground_C2.png" id="e2"]
+[ext_resource type="Texture2D" uid="uid://dqg5f5cqpi4jm" path="res://Polyart/Meadows/textures/Terrain/T_StoneGround_C.tga" id="e3"]
+[ext_resource type="Texture2D" uid="uid://dqatqe1oool52" path="res://Polyart/Meadows/textures/Terrain/Terrain_01_N.png" id="e4"]
+[ext_resource type="Texture2D" uid="uid://cunf5gadjkpi" path="res://Polyart/Meadows/textures/Terrain/T_Grass_Ground_N.png" id="e5"]
+[ext_resource type="Texture2D" uid="uid://fy7ntqgv4pu8" path="res://Polyart/Meadows/textures/Terrain/T_StoneGround_N.tga" id="e6"]
+
+[resource]
+resource_name = "M_Terrain_01"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/top_tex = ExtResource("e2")
+shader_parameter/top_normal_tex = ExtResource("e5")
+shader_parameter/side_tex = ExtResource("e3")
+shader_parameter/side_normal_tex = ExtResource("e6")
+shader_parameter/mesh_normal_tex = ExtResource("e4")
+shader_parameter/mesh_normal_weight = 1.0
+shader_parameter/top_tiling = 0.05
+shader_parameter/side_tiling = 0.01
+shader_parameter/top_tint = Color(1, 1, 1, 1)
+shader_parameter/side_tint = Color(0.999999, 0.950016, 0.920045, 1)
+shader_parameter/slope_start = 0.17
+shader_parameter/slope_end = 0.307
+shader_parameter/blend_noise_strength = 0.07
+shader_parameter/blend_noise_scale = 3.065
+shader_parameter/normal_intensity = 0.483
+shader_parameter/roughness_val = 0.81

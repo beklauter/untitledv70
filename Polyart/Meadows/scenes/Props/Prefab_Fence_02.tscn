@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://Polyart/Meadows/models/Props/SM_Fence_02.fbx" id="model"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Props/M_Fence_02.tres" id="r1"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rs7km"]
+size = Vector3(1.66237, 0.85545, 0.196153)
+
+[node name="Prefab_Fence_02" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Fence_02" parent="Model" index="0"]
+surface_material_override/0 = ExtResource("r1")
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 0
+
+[node name="Box" type="CollisionShape3D" parent="Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00141138, 0.379378, 0.0312967)
+shape = SubResource("BoxShape3D_rs7km")
+
+[editable path="Model"]

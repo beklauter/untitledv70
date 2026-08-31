@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Effects/M_Fog_Card.tres" id="r1"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_card"]
+size = Vector2(16, 5)
+
+; Three overlapping cards. Their bob phases differ by world position, so the
+; bank drifts rather than breathing in step. Footprint at scale 1 matches the
+; Stylized_Fog volume, 16 m across.
+[node name="Prefab_Fog_Card" type="Node3D"]
+
+[node name="Card_A" type="MeshInstance3D" parent="."]
+cast_shadow = 0
+gi_mode = 0
+mesh = SubResource("QuadMesh_card")
+surface_material_override/0 = ExtResource("r1")
+
+[node name="Card_B" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -5.5, -0.6, 2)
+cast_shadow = 0
+gi_mode = 0
+mesh = SubResource("QuadMesh_card")
+surface_material_override/0 = ExtResource("r1")
+
+[node name="Card_C" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.9, 0, 0, 0, 0.9, 0, 0, 0, 0.9, 5.5, -0.4, -2)
+cast_shadow = 0
+gi_mode = 0
+mesh = SubResource("QuadMesh_card")
+surface_material_override/0 = ExtResource("r1")

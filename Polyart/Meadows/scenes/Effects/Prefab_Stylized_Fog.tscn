@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Effects/M_Stylized_Fog_Volume.tres" id="mat"]
+
+[node name="Prefab_Stylized_Fog" type="FogVolume"]
+size = Vector3(16, 3, 16)
+shape = 2
+material = ExtResource("mat")

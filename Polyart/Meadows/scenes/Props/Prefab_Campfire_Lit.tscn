@@ -1,0 +1,33 @@
+[gd_scene load_steps=8 format=3 uid="uid://cwoawqdpg07ru"]
+
+[ext_resource type="PackedScene" uid="uid://irpbawfeslxa" path="res://Polyart/Meadows/models/shared/SM_Campsite_Ash_Unity.fbx" id="ash"]
+[ext_resource type="PackedScene" path="res://Polyart/Meadows/scenes/Effects/Prefab_Fire.tscn" id="fire"]
+[ext_resource type="PackedScene" uid="uid://dnsb7wl7wysal" path="res://Polyart/Meadows/models/shared/SM_Campsite_Rocks_Unity.fbx" id="model"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Props/M_Campsite_Rocks_Lit.tres" id="r1"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Props/M_Campsite_Firewood_Base.tres" id="r2"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Props/M_Campsite_Ash.tres" id="r3"]
+[ext_resource type="PackedScene" uid="uid://ctjvenggpapgg" path="res://Polyart/Meadows/models/shared/SM_Campsite_Firewood_Used_Unity.fbx" id="wood"]
+
+[node name="Prefab_Campfire_Lit" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="SmallRock_01_low" parent="Model" index="0"]
+surface_material_override/0 = ExtResource("r1")
+
+[node name="Ash" parent="." instance=ExtResource("ash")]
+
+[node name="Plane" parent="Ash" index="0"]
+surface_material_override/0 = ExtResource("r3")
+
+[node name="Firewood" parent="." instance=ExtResource("wood")]
+
+[node name="FireWood_12_low_002" parent="Firewood" index="0"]
+surface_material_override/0 = ExtResource("r2")
+
+[node name="Fire" parent="." instance=ExtResource("fire")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.12, 0)
+
+[editable path="Model"]
+[editable path="Ash"]
+[editable path="Firewood"]

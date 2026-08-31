@@ -1,0 +1,43 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" uid="uid://dku1m3661kmqy" path="res://Polyart/SharedResources/Shaders/pa_leaves.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://q50sprkqdafm" path="res://Polyart/Meadows/textures/Foliage/T_Leaves_Clump_01.png" id="e2"]
+
+[resource]
+resource_name = "M_TreeBirch_Leaves_GreenYellow"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/color_map = ExtResource("e2")
+shader_parameter/tiling = 1.0
+shader_parameter/color_tint = Color(1, 1, 1, 1)
+shader_parameter/use_height_gradience = true
+shader_parameter/color_bottom = Color(0.3, 0.296, 0.004, 1)
+shader_parameter/color_top = Color(0.562, 0.532, 0.032, 1)
+shader_parameter/grad_smoothstep_min = 0.0
+shader_parameter/grad_smoothstep_max = 1.0
+shader_parameter/height_gradience = 1.0
+shader_parameter/height_weight = 1.0
+shader_parameter/variation_scale = 0.0
+shader_parameter/variation_contrast = 0.0
+shader_parameter/hue_shift = 0.0
+shader_parameter/painted_ao_color = Color(0, 0, 0, 0)
+shader_parameter/alpha_clip = 0.5
+shader_parameter/alpha_far_mul = 0.45
+shader_parameter/alpha_far_start = 12.0
+shader_parameter/alpha_far_range = 30.0
+shader_parameter/roughness_val = 1.0
+shader_parameter/cull_backfaces = false
+shader_parameter/fade_at_glancing = false
+shader_parameter/glancing_mul = 1.0
+shader_parameter/enable_ss = false
+shader_parameter/ss_color = Color(0.65, 0.62, 0.16, 1)
+shader_parameter/ss_strength = 2.0
+shader_parameter/ss_power = 4.0
+shader_parameter/ss_distortion = 0.3
+shader_parameter/sway_direction = Vector2(0, 0)
+shader_parameter/sway_speed = 0.0
+shader_parameter/sway_intensity = 0.0
+shader_parameter/wiggle_speed_large = 0.77
+shader_parameter/wiggle_speed_small = 1.0
+shader_parameter/wiggle_size = 4.0
+shader_parameter/wiggle_intensity = 0.1
