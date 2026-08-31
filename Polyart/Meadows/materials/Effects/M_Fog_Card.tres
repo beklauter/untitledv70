@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://buytxylyi7tw8"]
+
+[ext_resource type="Shader" uid="uid://bbvq6h82dpc0t" path="res://Polyart/SharedResources/Shaders/pa_fog_card.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://cw6namlt8pl3x" path="res://Polyart/Meadows/textures/Effects/T_Fog_Color.png" id="e2"]
+[ext_resource type="Texture2D" uid="uid://8ugp311lueel" path="res://Polyart/SharedResources/Textures/T_Perlin_Noise.PNG" id="e3"]
+
+[resource]
+resource_name = "M_Fog_Card"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/fog_tex = ExtResource("e2")
+shader_parameter/detail_tex = ExtResource("e3")
+shader_parameter/detail_noise_tiling = 0.425
+shader_parameter/detail_intensity_exponent = 5.42
+shader_parameter/detail_intensity = 0.8
+shader_parameter/overall_intensity_exponent = 1.0
+shader_parameter/overall_intensity_multiplier = 2.455
+shader_parameter/tint = Color(0.721847, 0.853964, 0.886034, 0.533333)
+shader_parameter/use_random_movement = true
+shader_parameter/x_speed = 0.05
+shader_parameter/y_speed = 0.02
+shader_parameter/fresnel_exponent = 4.0
+shader_parameter/depth_fade_distance = 36.16
+shader_parameter/fog_thickest_distance = 8.4
+shader_parameter/transition_distance = 13.2

@@ -1,0 +1,35 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://7o0vs83eh307"]
+
+[ext_resource type="Shader" uid="uid://cy0q8466raq6d" path="res://Polyart/SharedResources/Shaders/pa_foliage.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://q50sprkqdafm" path="res://Polyart/Meadows/textures/Foliage/T_Leaves_Clump_01.png" id="e2"]
+
+[resource]
+resource_name = "M_Bushes_01"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/foliage_map = ExtResource("e2")
+shader_parameter/color_tint = Color(0.352196, 0.68467, 0.0758918, 1)
+shader_parameter/use_height_gradience = true
+shader_parameter/color_top = Color(0.548333, 0.607346, 0.0683966, 1)
+shader_parameter/color_bottom = Color(0.23292, 0.487593, 0.00399091, 1)
+shader_parameter/grad_smoothstep_min = 0.935
+shader_parameter/grad_smoothstep_max = 2.045
+shader_parameter/painted_ao_color = Color(0, 0, 0, 0)
+shader_parameter/alpha_clip = 0.5
+shader_parameter/smoothness_val = 0.0
+shader_parameter/cull_backfaces = false
+shader_parameter/fade_at_glancing = false
+shader_parameter/glancing_mul = 1.0
+shader_parameter/wind_large_speed = Vector2(0.1, 2)
+shader_parameter/wind_large_intensity = 0.1
+shader_parameter/wind_large_scale = 60.0
+shader_parameter/large_darken_contrast = 0.0
+shader_parameter/large_darken_multiplier = 1.0
+shader_parameter/wind_small_speed = Vector2(-0.15, 1.8)
+shader_parameter/wind_small_intensity = 0.5
+shader_parameter/wind_small_scale = 0.5
+shader_parameter/small_darken_contrast = 0.0
+shader_parameter/small_darken_multiplier = 1.0
+shader_parameter/use_wind_height_gradience = false
+shader_parameter/wind_grad_height_min = 0.0
+shader_parameter/wind_grad_height_max = 1.0

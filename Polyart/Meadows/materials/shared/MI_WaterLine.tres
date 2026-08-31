@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=1 format=3]
+
+
+[resource]
+resource_name = "MI_WaterLine"
+albedo_color = Color(0.3237362, 0.6012294, 0.9150943, 1)

@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/Effects/T_Leaf_Update_01.png" id="1"]
+
+[resource]
+resource_name = "M_Leaf_02"
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 0.24725196, 0.24056602, 1)
+albedo_texture = ExtResource("1")
+cull_mode = 2
+billboard_mode = 3
+billboard_keep_scale = true

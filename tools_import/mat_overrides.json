@@ -1,0 +1,64 @@
+{
+  "res://Polyart/Meadows/models/Grass/SM_Grass_01_Basic.fbx": [
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres"
+  ],
+  "res://Polyart/Meadows/models/Grass/SM_Grass_01_Unity.fbx": [
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres",
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres",
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres",
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres"
+  ],
+  "res://Polyart/Meadows/models/Grass/SM_Grass_02_Unity.fbx": [
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres",
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres",
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres",
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres"
+  ],
+  "res://Polyart/Meadows/models/Grass/SM_Grass_03_Unity.fbx": [
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres",
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres",
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres",
+    "res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres"
+  ],
+  "res://Polyart/Meadows/models/Props/SM_Campsite_Ash.fbx": [
+    "res://Polyart/Meadows/materials/Props/M_Ash.tres"
+  ],
+  "res://Polyart/Meadows/models/Props/SM_Campsite_Rocks.fbx": [
+    "res://Polyart/Meadows/materials/Props/M_Campsite_Rocks_Lit.tres"
+  ],
+  "res://Polyart/Meadows/models/Props/SM_Stick_01.fbx": [
+    "res://Polyart/Meadows/materials/Props/M_Sticks.tres"
+  ],
+  "res://Polyart/Meadows/models/Props/SM_Stick_02.fbx": [
+    "res://Polyart/Meadows/materials/Props/M_Sticks.tres"
+  ],
+  "res://Polyart/Meadows/models/Props/SM_Stick_03.fbx": [
+    "res://Polyart/Meadows/materials/Props/M_Sticks.tres"
+  ],
+  "res://Polyart/Meadows/models/Rocks/SM_RuneRock_01.fbx": [
+    "res://Polyart/Meadows/materials/Rocks/M_Rocks_Rune_01.tres"
+  ],
+  "res://Polyart/Meadows/models/Water/SM_WaterPlane_High.fbx": [
+    "res://Polyart/Meadows/materials/Water/MI_Water_MeadowsLake.tres"
+  ],
+  "res://Polyart/Meadows/models/Water/SM_WaterPlane_Medium.fbx": [
+    "res://Polyart/Meadows/materials/Water/MI_Water_MeadowsLake.tres"
+  ],
+  "res://Polyart/Meadows/models/Water/SM_Waterfall_Edge.fbx": [
+    "res://Polyart/Meadows/materials/Water/M_Dreamscape_Waterfall.tres",
+    "res://Polyart/Meadows/materials/Water/M_Dreamscape_Waterfall.tres"
+  ],
+  "res://Polyart/Meadows/models/Water/SM_Waterfall_Main.fbx": [
+    "res://Polyart/Meadows/materials/Water/M_Dreamscape_Waterfall.tres",
+    "res://Polyart/Meadows/materials/Water/M_Dreamscape_Waterfall.tres"
+  ],
+  "res://Polyart/Meadows/models/Water/Sm_Foam_Top.fbx": [
+    "res://Polyart/Meadows/materials/Water/M_WaterfallFoam.tres"
+  ],
+  "res://Polyart/Meadows/models/shared/SM_Campsite_Ash_Unity.fbx": [
+    "res://Polyart/Meadows/materials/Props/M_Campsite_Ash.tres"
+  ],
+  "res://Polyart/Meadows/models/shared/SM_Campsite_Rocks_Unity.fbx": [
+    "res://Polyart/Meadows/materials/Props/M_Campsite_Rocks_Lit.tres"
+  ]
+}

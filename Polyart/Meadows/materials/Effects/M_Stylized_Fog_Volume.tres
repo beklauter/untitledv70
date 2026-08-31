@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://jnqwvv8olidd"]
+
+[ext_resource type="Shader" uid="uid://u45pwwuny1ri" path="res://Polyart/SharedResources/Shaders/pa_fog_volume.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://bolmv15ld4o5r" path="res://Polyart/SharedResources/Textures/T_Noise_02.png" id="e2"]
+
+[resource]
+resource_name = "M_Stylized_Fog_Volume"
+shader = ExtResource("e1")
+shader_parameter/fog_albedo = Color(0.308633, 0.91383, 1, 1)
+shader_parameter/fog_emission = Color(0.3, 0.38, 0.5, 1)
+shader_parameter/density = 0.412
+shader_parameter/height_falloff = 1.802
+shader_parameter/edge_fade = 0.45
+shader_parameter/noise_tex = ExtResource("e2")
+shader_parameter/noise_scale = 0.06
+shader_parameter/noise_contrast = 1.0
+shader_parameter/drift_speed = Vector2(0.1, 0.1)

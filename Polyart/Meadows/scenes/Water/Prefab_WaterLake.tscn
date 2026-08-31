@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://Polyart/Meadows/models/Water/SM_WaterPlane_Medium.fbx" id="model"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Water/MI_Water_MeadowsLake.tres" id="r1"]
+
+[node name="Prefab_WaterLake" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Plane_Medium" parent="Model"]
+surface_material_override/0 = ExtResource("r1")
+
+[editable path="Model"]

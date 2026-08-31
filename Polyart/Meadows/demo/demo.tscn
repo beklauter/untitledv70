@@ -5752,7 +5752,6 @@ transform = Transform3D(579.232, 0, 113.79, 0, 200, 0, -108.641, 0, 606.684, 287
 
 [node name="WaterVolume_Pond" parent="." unique_id=411002732 instance=ExtResource("water_volume")]
 transform = Transform3D(-20.6031, 0, -6.36878, 0, 20, 0, 7.88113, 0, -16.6495, 561.26, 111.954, -596.169)
-
 [node name="Statics" type="Node3D" parent="." unique_id=915586588]
 
 [node name="Prefab_RocksRound_01_0000" parent="Statics" unique_id=430272714 instance=ExtResource("26_0y3rd")]

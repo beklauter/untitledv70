@@ -1,0 +1,38 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://ch6ys015eheeo"]
+
+[ext_resource type="Texture2D" uid="uid://8nqr3ipsyrn3" path="res://Polyart/SharedResources/Textures/T_Noise_03.png" id="3_i3qhj"]
+[ext_resource type="Shader" uid="uid://bautm2acrb4i6" path="res://Polyart/SharedResources/Shaders/pa_grass.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://puyxs6uwjv5f" path="res://Polyart/Meadows/textures/Foliage/T_Grass_Blades_Final.png" id="e2"]
+
+[resource]
+resource_name = "M_Grass_01"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/base_color_tex = ExtResource("e2")
+shader_parameter/tint_bottom = Color(0.615516, 0.870563, 0.0290313, 1)
+shader_parameter/tint_top = Color(0.957652, 0.969286, 0, 1)
+shader_parameter/grad_pow = 7.98
+shader_parameter/grad_offset = 0.03
+shader_parameter/grad_length = 0.1479
+shader_parameter/smoothness_val = 0.0
+shader_parameter/alpha_clip = 0.54
+shader_parameter/cull_backfaces = false
+shader_parameter/fade_at_glancing = false
+shader_parameter/glancing_mul = 1.0
+shader_parameter/cloud_color = Color(1, 1, 1, 1)
+shader_parameter/cloud_scale = 24.875
+shader_parameter/cloud_speed = Vector2(0.5, 0.3)
+shader_parameter/cloud_use_texture = true
+shader_parameter/cloud_tex = ExtResource("3_i3qhj")
+shader_parameter/wind_large_speed = Vector2(5.05, 7)
+shader_parameter/wind_large_multiplier = 0.415
+shader_parameter/wind_large_scale = 88.05
+shader_parameter/wind_gust_power = 3.529
+shader_parameter/wind_dip = 1.0
+shader_parameter/wind_darken = 1.0
+shader_parameter/wind_ramp = 0.246
+shader_parameter/wind_small_speed = Vector2(-0.15, 1.8)
+shader_parameter/wind_small_multiplier = 0.06
+shader_parameter/wind_small_scale = 40.0
+shader_parameter/wind_offset = 0.05
+shader_parameter/wind_use_vertex_color = false

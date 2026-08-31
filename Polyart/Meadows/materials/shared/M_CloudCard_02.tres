@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" load_steps=1 format=3]
+
+
+[resource]
+resource_name = "M_CloudCard_02"
+albedo_color = Color(0.8396226, 0.72894335, 0.16237983, 1)

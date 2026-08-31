@@ -1,0 +1,32 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://dwulhlpcf7ewe"]
+
+[ext_resource type="Shader" uid="uid://8p2v8n34h5py" path="res://Polyart/SharedResources/Shaders/pa_waterfall_foam.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://cwayxnwsia1cd" path="res://Polyart/Meadows/textures/Water/T_Waterfall_Directional_Noise_90.png" id="e2"]
+[ext_resource type="Texture2D" uid="uid://bku8g7uu2sbfb" path="res://Polyart/Meadows/textures/Water/T_Waterfall_Directional_Noise.png" id="e3"]
+
+[resource]
+resource_name = "M_WaterfallFoam_Variation"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/use_radial_uv = true
+shader_parameter/radial_extent = 6.515
+shader_parameter/radial_arc = 1.0
+shader_parameter/radial_angle_offset = 0.0
+shader_parameter/radial_center = Vector2(2.77, 0)
+shader_parameter/radial_flip_v = false
+shader_parameter/tex_a = ExtResource("e2")
+shader_parameter/tex_b = ExtResource("e3")
+shader_parameter/scale_width = -1.0
+shader_parameter/a_scale_x = 4.0
+shader_parameter/a_scale_y = 1.2
+shader_parameter/b_scale_x = 0.0
+shader_parameter/b_scale_y = 1.0
+shader_parameter/a_speed = 0.27
+shader_parameter/b_speed = 0.0
+shader_parameter/horizontal_speed = 0.0
+shader_parameter/color_0 = Color(0, 0.949522, 1, 1)
+shader_parameter/color_1 = Color(1, 1, 1, 1)
+shader_parameter/edge_bias = 0.545
+shader_parameter/edge_sharpness = 0.552
+shader_parameter/threshold_bias = 0.71
+shader_parameter/mask_clip = 0.298

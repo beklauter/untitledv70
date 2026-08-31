@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://Polyart/Meadows/models/Water/SM_Foam_Bottom_High.fbx" id="model"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Water/M_WaterfallFoam_Volumetric.tres" id="r1"]
+
+[node name="Prefab_FoamVolumetric" type="Node3D"]
+
+; The Y squash is how the pack sets foam height: the shader's Height is in mesh
+; units and the node scale decides how much of it reaches the screen. The two
+; loose copies in the original demo map use 0.115 and 0.584; the source prefab
+; is left at 1, which stands a 7 m cyan wall in the pool, so this uses the
+; tamer 0.115 instead. Raise the node's Y scale for a bigger churn.
+[node name="Model" parent="." instance=ExtResource("model")]
+transform = Transform3D(1, 0, 0, 0, 0.1145, 0, 0, 0, 1, 0, 0, 0)
+
+; The mesh is a flat sheet, so its own box has no height and Godot would cull
+; the foam the moment only the raised part is on screen. This box covers the
+; shader's whole Height range at its maximum of 100: down a quarter, up the
+; other three quarters.
+[node name="SM_Foam_Bottom_High" parent="Model"]
+custom_aabb = AABB(-3.418, -25, -4.738, 4.602, 100, 9.376)
+surface_material_override/0 = ExtResource("r1")
+
+[editable path="Model"]

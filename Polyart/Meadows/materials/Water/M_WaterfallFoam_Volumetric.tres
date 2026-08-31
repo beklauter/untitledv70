@@ -1,0 +1,21 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://b7n1ypkfadsei"]
+
+[ext_resource type="Shader" uid="uid://ce6eu87b8mtuk" path="res://Polyart/SharedResources/Shaders/pa_waterfall_foam_volumetric.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://bku8g7uu2sbfb" path="res://Polyart/Meadows/textures/Water/T_Waterfall_Directional_Noise.png" id="e2"]
+
+[resource]
+resource_name = "M_WaterfallFoam_Volumetric"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/foam_tex = ExtResource("e2")
+shader_parameter/scale_width = -0.645
+shader_parameter/acceleration = 1.27
+shader_parameter/scale_x = 0.59
+shader_parameter/scale_y = 1.0
+shader_parameter/vertical_speed = -1.0
+shader_parameter/threshold = 0.01
+shader_parameter/height = 42.115
+shader_parameter/color_0 = Color(0, 0.895699, 0.990566, 1)
+shader_parameter/color_1 = Color(1, 1, 1, 1)
+shader_parameter/use_opacity_mask = true
+shader_parameter/mask_clip = 0.065
