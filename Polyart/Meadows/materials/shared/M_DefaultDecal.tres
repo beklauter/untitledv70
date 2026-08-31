@@ -1,0 +1,10 @@
+[gd_resource type="ORMMaterial3D" load_steps=2 format=3]
+
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/shared/T_BaseORM.png" id="e1"]
+
+[resource]
+resource_name = "M_DefaultDecal"
+albedo_color = Color(1, 1, 1, 1)
+orm_texture = ExtResource("e1")
+roughness = 0.9
+metallic = 0

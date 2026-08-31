@@ -1,0 +1,68 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://cecn0dkb6kpb4"
+path="res://.godot/imported/SM_TreeLarge_04_Unity.fbx-e90f585eaa788d6c8ac832db087051ef.scn"
+
+[deps]
+
+source_file="res://Polyart/Meadows/models/Trees/SM_TreeLarge_04_Unity.fbx"
+dest_files=["res://.godot/imported/SM_TreeLarge_04_Unity.fbx-e90f585eaa788d6c8ac832db087051ef.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+mesh_library/use_node_names_as_mesh_names=false
+array_mesh/deduplicate_surfaces=true
+nodes/apply_root_scale=true
+nodes/root_scale=0.1
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=false
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=true
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"LeafBush": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Polyart/Meadows/materials/Trees/M_TreeLarge_Leaves.tres",
+"use_external/path": "uid://clrwctbla7ycl"
+},
+"M_TreeLarge_Bark": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Polyart/Meadows/materials/Trees/M_TreeLarge_Bark.tres",
+"use_external/path": "res://Polyart/Meadows/materials/Trees/M_TreeLarge_Bark.tres"
+},
+"SimplygonCastMaterial.004": {
+"use_external/enabled": true,
+"use_external/path": "res://Polyart/Meadows/materials/Trees/M_TreeLarge_BB_04.tres"
+},
+"TreeLarge_04": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Polyart/Meadows/materials/Trees/M_TreeLarge_BB_04.tres",
+"use_external/path": "uid://d34hm7gxx147m"
+}
+}
+}
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1
+fbx/naming_version=2

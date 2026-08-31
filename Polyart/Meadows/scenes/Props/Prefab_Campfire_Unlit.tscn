@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dit4pqebat1ma"]
+
+[ext_resource type="PackedScene" uid="uid://dnsb7wl7wysal" path="res://Polyart/Meadows/models/shared/SM_Campsite_Rocks_Unity.fbx" id="model"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Props/M_Campsite_Rocks_Lit.tres" id="r1"]
+
+[node name="Prefab_Campfire_Unlit" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="SmallRock_01_low" parent="Model" index="0"]
+surface_material_override/0 = ExtResource("r1")
+
+[editable path="Model"]

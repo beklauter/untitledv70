@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Props/M_Sticks.tres" id="r1"]
+
+[ext_resource type="PackedScene" path="res://Polyart/Meadows/models/shared/SM_Stick_01_Unity.fbx" id="model"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ke11s"]
+size = Vector3(0.185459, 0.790517, 0.0834406)
+
+[node name="Prefab_Stick_01" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Stick_05_low" parent="Model" index="0"]
+surface_material_override/0 = ExtResource("r1")
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 0
+
+[node name="Box" type="CollisionShape3D" parent="Collision"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0126564, 0.368515, 0.00327725)
+shape = SubResource("BoxShape3D_ke11s")
+
+[editable path="Model"]

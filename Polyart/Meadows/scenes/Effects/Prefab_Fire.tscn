@@ -1,0 +1,62 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/shared/M_Fire.tres" id="mat"]
+[ext_resource type="Script" path="res://Polyart/Meadows/demo/scripts/pa_fire_light.gd" id="flicker"]
+
+[sub_resource type="Gradient" id="Gradient_fire"]
+offsets = PackedFloat32Array(0, 0.25, 0.65, 1)
+colors = PackedColorArray(0.87, 0.37, 0, 0.69, 0.94, 0.38, 0.09, 1, 1, 0.047, 0, 1, 1, 1, 0, 0)
+
+[sub_resource type="GradientTexture1D" id="GradTex_fire"]
+gradient = SubResource("Gradient_fire")
+
+[sub_resource type="Curve" id="Curve_size"]
+_data = [Vector2(0, 0.587), 0.0, 0.0, 0, 0, Vector2(0.459, 0.923), 0.0, 0.0, 0, 0, Vector2(1, 0.066), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTex_size"]
+curve = SubResource("Curve_size")
+
+[sub_resource type="ParticleProcessMaterial" id="Process_fire"]
+lifetime_randomness = 0.3
+emission_shape = 1
+emission_sphere_radius = 0.07
+direction = Vector3(0, 1, 0)
+spread = 12.0
+initial_velocity_min = 0.05
+initial_velocity_max = 0.15
+angle_min = -180.0
+angle_max = 180.0
+gravity = Vector3(0, 1.47, 0)
+scale_min = 0.25
+scale_max = 0.3
+scale_curve = SubResource("CurveTex_size")
+color_ramp = SubResource("GradTex_fire")
+turbulence_enabled = true
+turbulence_noise_strength = 0.15
+turbulence_noise_scale = 3.0
+anim_speed_min = 1.0
+anim_speed_max = 1.0
+
+[sub_resource type="QuadMesh" id="Quad_fire"]
+size = Vector2(1, 1)
+material = ExtResource("mat")
+
+[node name="Prefab_Fire" type="GPUParticles3D"]
+material_override = null
+cast_shadow = 0
+amount = 24
+lifetime = 1.0
+speed_scale = 0.7
+preprocess = 1.0
+local_coords = false
+process_material = SubResource("Process_fire")
+draw_pass_1 = SubResource("Quad_fire")
+
+[node name="FireLight" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
+light_color = Color(1, 0.65, 0.3, 1)
+light_energy = 2.5
+omni_range = 6.0
+shadow_enabled = false
+script = ExtResource("flicker")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cw4t3rv01um30"]
+
+[ext_resource type="Script" uid="uid://bw4t3rv01um31" path="res://Water/water_volume.gd" id="1_volume"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_water"]
+size = Vector3(1, 1, 1)
+
+[node name="WaterVolume" type="Area3D"]
+collision_layer = 8
+collision_mask = 0
+monitoring = false
+script = ExtResource("1_volume")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_water")

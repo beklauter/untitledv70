@@ -1,0 +1,48 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=3 uid="uid://bvfhlp7m6fg2f"]
+
+[ext_resource type="Texture2D" uid="uid://brw3tg4kokpkl" path="res://Polyart/Meadows/textures/Water/T_Water_Caustics_C.PNG" id="2_118ih"]
+[ext_resource type="Texture2D" uid="uid://npmvp87jtr2y" path="res://Polyart/Meadows/textures/Water/T_WaveLarge_N.png" id="3_n3hec"]
+[ext_resource type="Texture2D" uid="uid://8nqr3ipsyrn3" path="res://Polyart/SharedResources/Textures/T_Noise_03.png" id="3_py48p"]
+[ext_resource type="Texture2D" uid="uid://d2bjca53tigb4" path="res://Polyart/Meadows/textures/Water/T_Water_Normals.png" id="4_py48p"]
+[ext_resource type="Shader" uid="uid://cpm4xdnun55iv" path="res://Polyart/SharedResources/Shaders/pa_lake.gdshader" id="e1"]
+
+[resource]
+resource_name = "MI_Water_MeadowsLake"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/shallow_color = Color(0.039, 0.566, 0.641, 1)
+shader_parameter/deep_color = Color(0, 0.259849, 0.472073, 1)
+shader_parameter/shallow_color_depth = 0.0
+shader_parameter/deep_color_depth = 5.17
+shader_parameter/smoothness_val = 0.966
+shader_parameter/metallic = 0.644
+shader_parameter/normals_strength = 0.13
+shader_parameter/normal_map_a = ExtResource("4_py48p")
+shader_parameter/tiling_a = 1.0
+shader_parameter/speed_a = 3.0
+shader_parameter/strength_a = 1.455
+shader_parameter/normal_map_b = ExtResource("3_n3hec")
+shader_parameter/tiling_b = 0.6
+shader_parameter/speed_b = 1.0
+shader_parameter/strength_b = 1.386
+shader_parameter/refraction_amount = 0.05
+shader_parameter/thickness_depth_min = 0.0
+shader_parameter/thickness_depth_max = 30.0
+shader_parameter/underwater_brightness = 0.7
+shader_parameter/shore_fade_depth = 0.119
+shader_parameter/edge_foam_distance = 0.055
+shader_parameter/edge_foam_speed = 1.0
+shader_parameter/edge_foam_waves = 2.99
+shader_parameter/edge_foam_opacity = 0.949
+shader_parameter/noise_tex = ExtResource("3_py48p")
+shader_parameter/caustics_tex = ExtResource("2_118ih")
+shader_parameter/caustics_intensity = 1.2
+shader_parameter/caustics_scale = 0.845
+shader_parameter/caustics_distance = 1.1
+shader_parameter/caustics_distortion = 0.0
+shader_parameter/ssr_enabled = true
+shader_parameter/ssr_stride = 2.0
+shader_parameter/ssr_max_travel = 1000.0
+shader_parameter/ssr_thickness = 0.05
+shader_parameter/ssr_mix_strength = 0.797
+shader_parameter/ssr_blur = 1.5

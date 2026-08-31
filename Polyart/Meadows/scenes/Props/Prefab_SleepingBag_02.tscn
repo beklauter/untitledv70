@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://Polyart/Meadows/models/shared/SM_SleepingBag_04_Unity.fbx" id="model"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Props/M_SleepingBag_02.tres" id="r1"]
+
+[node name="Prefab_SleepingBag_02" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="SM_SleepingBag_open_01_low" parent="Model"]
+surface_material_override/0 = ExtResource("r1")
+
+[editable path="Model"]

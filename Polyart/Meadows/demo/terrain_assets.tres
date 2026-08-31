@@ -1,0 +1,158 @@
+[gd_resource type="Terrain3DAssets" format=3 uid="uid://dnftxhw65fhtr"]
+
+[ext_resource type="Material" uid="uid://ch6ys015eheeo" path="res://Polyart/Meadows/materials/Foliage/M_Grass_01.tres" id="1_hqx5a"]
+[ext_resource type="PackedScene" uid="uid://bb34ef00anyuy" path="res://Polyart/Meadows/models/Grass/SM_Grass_01_Unity.fbx" id="2_7l6jo"]
+[ext_resource type="PackedScene" uid="uid://d3sw7hedcnowk" path="res://Polyart/Meadows/models/Grass/SM_Grass_Group_01.fbx" id="3_5byev"]
+[ext_resource type="PackedScene" uid="uid://0h2a6idrfxrv" path="res://Polyart/Meadows/models/Grass/SM_Grass_03_Unity.fbx" id="4_y3a3i"]
+[ext_resource type="PackedScene" uid="uid://c3rgjgkmjrvhr" path="res://Polyart/Meadows/models/Foliage/SM_Flower_01_Unity.fbx" id="5_0de0h"]
+[ext_resource type="Material" uid="uid://ccsythnpxdgnf" path="res://Polyart/Meadows/materials/Foliage/M_Flower_01.tres" id="6_m62wd"]
+[ext_resource type="PackedScene" uid="uid://bu32melybpqoe" path="res://Polyart/Meadows/models/Foliage/SM_Flower_02_Unity.fbx" id="7_471dx"]
+[ext_resource type="Material" uid="uid://clagg42jni0y" path="res://Polyart/Meadows/materials/Foliage/M_Flower_02.tres" id="8_kw8ld"]
+[ext_resource type="PackedScene" uid="uid://d2o50ec4krjo4" path="res://Polyart/Meadows/models/Foliage/SM_Flower_Field_01.fbx" id="9_ah11r"]
+[ext_resource type="Texture2D" uid="uid://bwrhi3v0vamxp" path="res://Polyart/Meadows/textures/Terrain/t3d/t3d_layer_0_nrm.png" id="n0"]
+[ext_resource type="Texture2D" uid="uid://bta724a44bxn8" path="res://Polyart/Meadows/textures/Terrain/t3d/t3d_layer_1_nrm.png" id="n1"]
+[ext_resource type="Texture2D" uid="uid://vdkr3iul7c8r" path="res://Polyart/Meadows/textures/Terrain/t3d/t3d_layer_2_nrm.png" id="n2"]
+[ext_resource type="Texture2D" uid="uid://bkbqgw5idphx3" path="res://Polyart/Meadows/textures/Terrain/t3d/t3d_layer_3_nrm.png" id="n3"]
+[ext_resource type="Texture2D" uid="uid://b46u40xw5is6x" path="res://Polyart/Meadows/textures/Terrain/t3d/t3d_layer_4_nrm.png" id="n4"]
+[ext_resource type="Texture2D" uid="uid://cun7m1v818r1l" path="res://Polyart/Meadows/textures/Terrain/t3d/t3d_layer_0.png" id="t0"]
+[ext_resource type="Texture2D" uid="uid://k17es4u11mur" path="res://Polyart/Meadows/textures/Terrain/t3d/t3d_layer_1.png" id="t1"]
+[ext_resource type="Texture2D" uid="uid://bg607uyl2nc7p" path="res://Polyart/Meadows/textures/Terrain/t3d/t3d_layer_2.png" id="t2"]
+[ext_resource type="Texture2D" uid="uid://ufrjliaxthgy" path="res://Polyart/Meadows/textures/Terrain/t3d/t3d_layer_3.png" id="t3"]
+[ext_resource type="Texture2D" uid="uid://bax502vencj2m" path="res://Polyart/Meadows/textures/Terrain/t3d/t3d_layer_4.png" id="t4"]
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_7lbbw"]
+name = "detail_0_SM_Grass_01_Unity"
+scene_file = ExtResource("2_7l6jo")
+cast_shadows = 0
+material_override = ExtResource("1_hqx5a")
+last_lod = 3
+last_shadow_lod = 3
+lod0_range = 12.0
+lod1_range = 25.0
+lod2_range = 45.0
+lod3_range = 70.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_o6gpx"]
+name = "detail_1_SM_Grass_Group_01"
+id = 1
+scene_file = ExtResource("3_5byev")
+cast_shadows = 0
+material_override = ExtResource("1_hqx5a")
+last_lod = 3
+last_shadow_lod = 3
+lod0_range = 6.0
+lod1_range = 14.0
+lod2_range = 28.0
+lod3_range = 60.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_ya1fl"]
+name = "detail_2_SM_Grass_03_Unity"
+id = 2
+scene_file = ExtResource("4_y3a3i")
+cast_shadows = 0
+material_override = ExtResource("1_hqx5a")
+last_lod = 3
+last_shadow_lod = 3
+lod0_range = 12.0
+lod1_range = 25.0
+lod2_range = 45.0
+lod3_range = 70.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_ah11r"]
+name = "detail_3_SM_Flower_01_Unity"
+id = 3
+scene_file = ExtResource("5_0de0h")
+cast_shadows = 0
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 70.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_km6sy"]
+name = "detail_4_SM_Flower_02_Unity"
+id = 4
+scene_file = ExtResource("7_471dx")
+cast_shadows = 0
+material_override = ExtResource("6_m62wd")
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 70.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_17hv6"]
+name = "detail_5_SM_Flower_01_Unity"
+id = 5
+scene_file = ExtResource("5_0de0h")
+cast_shadows = 0
+material_override = ExtResource("8_kw8ld")
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 70.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_wccw8"]
+name = "SM_Flower_Field_01"
+id = 6
+scene_file = ExtResource("9_ah11r")
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ah11r"]
+transparency = 4
+cull_mode = 2
+vertex_color_use_as_albedo = true
+backlight_enabled = true
+backlight = Color(0.5, 0.5, 0.5, 1)
+distance_fade_mode = 1
+distance_fade_min_distance = 128.0
+distance_fade_max_distance = 96.0
+
+[sub_resource type="Terrain3DMeshAsset" id="Terrain3DMeshAsset_0aese"]
+id = 7
+generated_type = 1
+height_offset = 0.5
+material_override = SubResource("StandardMaterial3D_ah11r")
+last_lod = 0
+last_shadow_lod = 0
+lod0_range = 128.0
+
+[sub_resource type="Terrain3DTextureAsset" id="TexAsset_0"]
+name = "T_Grass_Ground_C2"
+albedo_texture = ExtResource("t0")
+normal_texture = ExtResource("n0")
+roughness = 1.0
+uv_scale = 2.0
+
+[sub_resource type="Terrain3DTextureAsset" id="TexAsset_1"]
+name = "T_DirtGround_C"
+id = 1
+albedo_texture = ExtResource("t1")
+normal_texture = ExtResource("n1")
+uv_scale = 0.714
+
+[sub_resource type="Terrain3DTextureAsset" id="TexAsset_2"]
+name = "T_StoneGround_C"
+id = 2
+albedo_texture = ExtResource("t2")
+normal_texture = ExtResource("n2")
+normal_depth = 2.0
+uv_scale = 0.476
+
+[sub_resource type="Terrain3DTextureAsset" id="TexAsset_3"]
+name = "T_SandGround_C"
+id = 3
+albedo_texture = ExtResource("t3")
+normal_texture = ExtResource("n3")
+uv_scale = 0.357
+
+[sub_resource type="Terrain3DTextureAsset" id="TexAsset_4"]
+name = "T_Cobblestone_C"
+id = 4
+albedo_texture = ExtResource("t4")
+normal_texture = ExtResource("n4")
+normal_depth = 0.853
+ao_strength = 1.165
+roughness = -0.097
+uv_scale = 1.0
+
+[resource]
+mesh_list = Array[Terrain3DMeshAsset]([SubResource("Terrain3DMeshAsset_7lbbw"), SubResource("Terrain3DMeshAsset_o6gpx"), SubResource("Terrain3DMeshAsset_ya1fl"), SubResource("Terrain3DMeshAsset_ah11r"), SubResource("Terrain3DMeshAsset_km6sy"), SubResource("Terrain3DMeshAsset_17hv6"), SubResource("Terrain3DMeshAsset_wccw8"), SubResource("Terrain3DMeshAsset_0aese")])
+texture_list = Array[Terrain3DTextureAsset]([SubResource("TexAsset_0"), SubResource("TexAsset_1"), SubResource("TexAsset_2"), SubResource("TexAsset_3"), SubResource("TexAsset_4")])

@@ -1,0 +1,37 @@
+[gd_resource type="ShaderMaterial" load_steps=8 format=3 uid="uid://b613q5dj718x0"]
+
+[ext_resource type="Shader" uid="uid://bj87n4h0ek2ue" path="res://Polyart/SharedResources/Shaders/pa_props.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://bgtrxvnqs5oif" path="res://Polyart/Meadows/textures/Rocks/T_Rock_Formation_01_C.png" id="e2"]
+[ext_resource type="Texture2D" uid="uid://ce1x71bbcndgo" path="res://Polyart/Meadows/textures/Rocks/T_Rock_Formation_01_ORM.png" id="e3"]
+[ext_resource type="Texture2D" uid="uid://dmjbwvmu4this" path="res://Polyart/Meadows/textures/Rocks/T_Rock_Formation_01_N.png" id="e4"]
+[ext_resource type="Texture2D" uid="uid://bii0uurmh2qvn" path="res://Polyart/Meadows/textures/Terrain/T_Grass_Ground_C2.png" id="e5"]
+[ext_resource type="Texture2D" uid="uid://dol3xkihr7yks" path="res://Polyart/Meadows/textures/shared/T_BaseORM.png" id="e6"]
+[ext_resource type="Texture2D" uid="uid://cunf5gadjkpi" path="res://Polyart/Meadows/textures/Terrain/T_Grass_Ground_N.png" id="e7"]
+
+[resource]
+resource_name = "M_RockFormation_01"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/color_map = ExtResource("e2")
+shader_parameter/orm_map = ExtResource("e3")
+shader_parameter/normal_map = ExtResource("e4")
+shader_parameter/color_tint = Color(1, 1, 1, 0)
+shader_parameter/uv_size = 1.0
+shader_parameter/normal_intensity = 1.0
+shader_parameter/roughness_intensity = 1.0
+shader_parameter/metallic_intensity = 0.0
+shader_parameter/ao_intensity = 1.0
+shader_parameter/alpha_clip = 0.0
+shader_parameter/emissive_color = Color(1, 1, 1, 0)
+shader_parameter/emissive_intensity = 0.0
+shader_parameter/enable_coverage = true
+shader_parameter/coverage_color_map = ExtResource("e5")
+shader_parameter/coverage_orm_map = ExtResource("e6")
+shader_parameter/coverage_normal_map = ExtResource("e7")
+shader_parameter/coverage_size = 16.325
+shader_parameter/coverage_normal_intensity = 0.624
+shader_parameter/coverage_roughness_intensity = 2.0
+shader_parameter/coverage_metallic_intensity = 0.0
+shader_parameter/noise_size = 11.465
+shader_parameter/slope_offset = -0.22
+shader_parameter/slope_contrast = 2.19

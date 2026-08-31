@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" load_steps=1 format=3]
+
+
+[resource]
+resource_name = "M_WaterMistSoft"
+albedo_color = Color(0.879, 0.8376353, 0.7376706, 0.043137256)
+metallic = 0

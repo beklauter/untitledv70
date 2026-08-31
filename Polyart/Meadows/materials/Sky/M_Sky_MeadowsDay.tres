@@ -1,0 +1,51 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://chmqy0dbj25aj"]
+
+[ext_resource type="Shader" uid="uid://bk4tc0w50e802" path="res://Polyart/SharedResources/Shaders/pa_sky.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://38taiblcy5ka" path="res://Polyart/Meadows/textures/shared/T_Clouds.PNG" id="e2"]
+[ext_resource type="Texture2D" uid="uid://8yjsjeo3gr2u" path="res://Polyart/Meadows/textures/Water/T_Waves_Noise.png" id="e3"]
+
+[resource]
+resource_name = "M_Sky_MeadowsDay"
+shader = ExtResource("e1")
+shader_parameter/top_color = Color(0.3, 0.54, 0.86, 1)
+shader_parameter/horizon_color = Color(0.79, 0.89, 0.96, 1)
+shader_parameter/bottom_color = Color(0.251728, 0.686389, 0.835068, 1)
+shader_parameter/horizon_min = 0.0
+shader_parameter/horizon_max = 0.38
+shader_parameter/gradience_pow = 0.2
+shader_parameter/sun_scale = 3.0
+shader_parameter/sun_inner_color = Color(1, 0.98, 0.9, 1)
+shader_parameter/sun_outer_color = Color(1, 0.85, 0.55, 1)
+shader_parameter/sun_glow_color = Color(1, 0.9, 0.65, 1)
+shader_parameter/sun_glow_scale = 0.6
+shader_parameter/distortion_noise = ExtResource("e3")
+shader_parameter/distortion_scale = 20.0
+shader_parameter/distortion_speed = 25.0
+shader_parameter/l1_tex = ExtResource("e2")
+shader_parameter/l1_tiling = Vector2(2, 1)
+shader_parameter/l1_offset = Vector2(1, -0.07)
+shader_parameter/l1_pan_speed = 0.0007
+shader_parameter/l1_bright = Color(1, 1, 1, 1)
+shader_parameter/l1_dark = Color(0.75, 0.8, 0.88, 1)
+shader_parameter/l1_max_opacity = 0.43
+shader_parameter/l1_op_min = 0.1
+shader_parameter/l1_op_max = 0.8
+shader_parameter/l1_distortion = 0.02
+shader_parameter/l2_tiling = Vector2(1, 1)
+shader_parameter/l2_offset = Vector2(1, -0.03)
+shader_parameter/l2_pan_speed = 0.001
+shader_parameter/l2_bright = Color(1, 1, 1, 1)
+shader_parameter/l2_dark = Color(0.72, 0.78, 0.85, 1)
+shader_parameter/l2_max_opacity = 0.4
+shader_parameter/l2_op_min = 0.2
+shader_parameter/l2_op_max = 0.8
+shader_parameter/l2_distortion = 0.01
+shader_parameter/l3_tiling = Vector2(2, 1)
+shader_parameter/l3_offset = Vector2(7.07, -0.11)
+shader_parameter/l3_pan_speed = 0.0008
+shader_parameter/l3_bright = Color(1, 1, 1, 1)
+shader_parameter/l3_dark = Color(0.464276, 0.625422, 0.731875, 1)
+shader_parameter/l3_max_opacity = 0.96
+shader_parameter/l3_op_min = 0.3
+shader_parameter/l3_op_max = 0.9
+shader_parameter/l3_distortion = 0.01

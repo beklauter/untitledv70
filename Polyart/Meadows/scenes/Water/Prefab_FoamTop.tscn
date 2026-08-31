@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://Polyart/Meadows/models/Water/Sm_Foam_Top.fbx" id="model"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Water/M_WaterfallFoam.tres" id="r1"]
+
+[node name="Prefab_FoamTop" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Sm_Foam_Top" parent="Model"]
+surface_material_override/0 = ExtResource("r1")
+
+[editable path="Model"]

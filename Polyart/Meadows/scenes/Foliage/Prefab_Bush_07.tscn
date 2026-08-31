@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://Polyart/Meadows/models/Foliage/SM_Bush_07.fbx" id="model"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Foliage/M_Bushes_01.tres" id="r1"]
+[ext_resource type="Script" path="res://Polyart/Meadows/demo/scripts/pa_lod_group.gd" id="r2"]
+
+[node name="Prefab_Bush_07" type="Node3D"]
+script = ExtResource("r2")
+lod_switch_distances = PackedFloat32Array(14.18)
+distance_scale = 3.0
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="Bush_07_LOD0" parent="Model"]
+surface_material_override/0 = ExtResource("r1")
+
+[node name="Bush_07_LOD1" parent="Model"]
+surface_material_override/0 = ExtResource("r1")
+
+[editable path="Model"]

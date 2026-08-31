@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3]
+
+[ext_resource type="Shader" path="res://Polyart/SharedResources/Shaders/pa_props.gdshader" id="e1"]
+[ext_resource type="Texture2D" path="res://Polyart/Meadows/textures/Foliage/T_Leaves_Clump_01.png" id="e2"]
+
+[resource]
+resource_name = "M_Bushes_Tiling_01"
+shader = ExtResource("e1")
+shader_parameter/color_map = ExtResource("e2")
+shader_parameter/color_tint = Color(0.5730553, 0.7058824, 0.011764695, 0)
+shader_parameter/emissive_color = Color(1, 1, 1, 0)
+shader_parameter/uv_size = 1.0
+shader_parameter/normal_intensity = 1.0
+shader_parameter/metallic_intensity = 0.0
+shader_parameter/roughness_intensity = 1.0
+shader_parameter/ao_intensity = 1.0
+shader_parameter/emissive_intensity = 0.0
+shader_parameter/coverage_size = 0.0
+shader_parameter/coverage_normal_intensity = 0.0
+shader_parameter/coverage_roughness_intensity = 0.0
+shader_parameter/coverage_metallic_intensity = 0.0
+shader_parameter/slope_offset = 0.0
+shader_parameter/slope_contrast = 1.0
+shader_parameter/noise_size = 100.0
+shader_parameter/enable_coverage = false

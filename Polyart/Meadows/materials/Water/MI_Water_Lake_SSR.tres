@@ -1,0 +1,35 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=3 uid="uid://dhgrof4h3yyu5"]
+
+[ext_resource type="Shader" path="res://Polyart/SharedResources/Shaders/pa_lake_ssr.gdshader" id="e1"]
+[ext_resource type="Texture2D" uid="uid://npmvp87jtr2y" path="res://Polyart/Meadows/textures/Water/T_WaveLarge_N.png" id="e2"]
+[ext_resource type="Texture2D" uid="uid://brw3tg4kokpkl" path="res://Polyart/Meadows/textures/Water/T_Water_Caustics_C.PNG" id="e3"]
+[ext_resource type="Texture2D" uid="uid://8yjsjeo3gr2u" path="res://Polyart/Meadows/textures/Water/T_Waves_Noise.png" id="e4"]
+
+[resource]
+resource_name = "MI_Water_Lake_SSR"
+render_priority = 0
+shader = ExtResource("e1")
+shader_parameter/shallow_color = Color(0.0658331, 0.724899, 0.819005, 1)
+shader_parameter/deep_color = Color(0.129204, 0.314963, 0.640305, 1)
+shader_parameter/shallow_color_depth = 0.0
+shader_parameter/deep_color_depth = 1.0
+shader_parameter/smoothness_val = 0.997
+shader_parameter/reflectivity = 1.0
+shader_parameter/water_normal_map = ExtResource("e2")
+shader_parameter/normal_tiling = 0.275
+shader_parameter/normals_speed = 0.5
+shader_parameter/normals_strength = 0.2
+shader_parameter/terrain_origin_xz = Vector2(-50, -50)
+shader_parameter/terrain_size_xz = Vector2(100, 100)
+shader_parameter/terrain_height_min = -5.0
+shader_parameter/terrain_height_range = 1.0
+shader_parameter/edge_foam_distance = 0.6
+shader_parameter/edge_foam_speed = 1.0
+shader_parameter/edge_foam_waves = 8.55
+shader_parameter/edge_foam_opacity = 0.3
+shader_parameter/noise_tex = ExtResource("e4")
+shader_parameter/caustics_tex = ExtResource("e3")
+shader_parameter/caustics_intensity = 4.1
+shader_parameter/caustics_scale = 3.08
+shader_parameter/caustics_distance = 1.1
+shader_parameter/caustics_distortion = 0.0

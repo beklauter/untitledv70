@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="PackedScene" path="res://Polyart/Meadows/models/Rocks/SM_StoneSmall_03.fbx" id="model"]
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Rocks/M_Rocks_Group.tres" id="r1"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qcbcx"]
+points = PackedVector3Array(0.387405, -0.120651, -0.196972, 0.218172, -0.134548, -0.339251, 0.200784, 0.0922436, -0.186604, 0.243374, 0.110324, -0.129163, 0.278079, 0.0652111, -0.0819382, 0.375508, -0.125917, -0.129617, 0.0124023, -0.12934, -0.383978, 0.0806167, -0.058629, -0.364603, 0.0966671, 0.0517827, -0.284155, 0.332496, -0.144934, 0.113846, -0.103259, 0.13879, -0.152245, 0.178327, 0.142915, -0.0698294, 0.168613, 0.0712964, 0.138442, -0.280166, -0.120417, -0.280977, -0.331767, -0.126005, -0.114859, -0.297202, 0.00108226, -0.189328, -0.237717, 0.118194, -0.124016, 0.0302126, -0.118779, 0.38917, -0.204701, -0.123957, 0.344822, -0.12994, 0.153944, -0.0986635, -0.200336, 0.145138, -0.0593855, 0.151788, 0.0826476, 0.126863, 0.0197939, 0.0148618, 0.303198, -0.0138557, -0.0384717, 0.379181, -0.232156, 0.0731395, -0.0310055, -0.197098, 0.115005, 0.0294629, -0.155212, -0.111728, 0.380089, -0.159647, -0.0237852, 0.341643, -0.141978, 0.012258, 0.30562, -0.0901657, -0.0120536, 0.363212)
+
+[node name="Prefab_StoneSmall_03" type="Node3D"]
+
+[node name="Model" parent="." instance=ExtResource("model")]
+
+[node name="SM_stone_03_low" parent="Model" index="0"]
+surface_material_override/0 = ExtResource("r1")
+
+[node name="Collision" type="StaticBody3D" parent="."]
+collision_mask = 0
+
+[node name="Hull_SM_stone_03_low" type="CollisionShape3D" parent="Collision"]
+shape = SubResource("ConvexPolygonShape3D_qcbcx")
+
+[editable path="Model"]

@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Material" path="res://Polyart/Meadows/materials/Effects/M_GradientFog.tres" id="r1"]
+[ext_resource type="Script" path="res://Polyart/Meadows/demo/scripts/pa_gradient_fog.gd" id="s1"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_fog"]
+size = Vector2(1, 1)
+
+; The shader puts this quad on the screen itself, so the transform means
+; nothing. The cull margin keeps it from being dropped when the camera looks
+; away from the origin.
+[node name="Prefab_GradientFog" type="MeshInstance3D"]
+extra_cull_margin = 16384.0
+cast_shadow = 0
+gi_mode = 0
+mesh = SubResource("QuadMesh_fog")
+surface_material_override/0 = ExtResource("r1")
+script = ExtResource("s1")
